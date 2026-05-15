@@ -6,3 +6,7 @@ coverage/
 *.log
 .env*
 !.env.example
+.vscode
+www/
+.capacitor/
+.vite/
