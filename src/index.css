@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #6366f1;
+  --color-background: #e8eaf0;
+  --color-tertiary: #7c3aed;
+  --color-on-surface: #2e3040;
+  --color-on-surface-variant: #585a68;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+}
+
+@layer utilities {
+  .neo-raised {
+    box-shadow: 6px 6px 12px rgba(0,0,0,0.08), -6px -6px 12px rgba(255,255,255,0.6);
+    background-color: var(--color-background);
+  }
+  .neo-inset {
+    box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+    background-color: var(--color-background);
+  }
+  .neo-pressed:active {
+    box-shadow: inset 4px 4px 8px rgba(0,0,0,0.06), inset -4px -4px 8px rgba(255,255,255,0.5);
+    transform: scale(0.98);
+  }
+  .neural-wave {
+    background: linear-gradient(90deg, rgba(99,102,241,0.1) 0%, rgba(124,58,237,0.05) 100%);
+    mask-image: linear-gradient(to bottom, black, transparent);
+  }
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-background);
+  color: var(--color-on-surface);
+  -webkit-tap-highlight-color: transparent;
+}
