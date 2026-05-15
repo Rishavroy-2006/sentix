@@ -61,9 +61,3 @@ NeuroSync is configured with **Capacitor**, letting you easily wrap the web expe
    ```
    This command will automatically open the project in Android Studio. From there, you can build the APK, run it on a virtual emulator, or push it straight to your connected device.
 
-## 🐞 Troubleshooting
-
-- **GitHub Export Authentication Error in AI Studio:**
-  If you received a "Failed to create GitHub repository" error, your GitHub token in AI Studio may have expired or lacked permissions. You can fix this by doing one of two things:
-  1. Revoke and re-authenticate the GitHub connection in your AI Studio settings.
-  2. Or, use the **Export to ZIP** option in AI Studio, extract it on your local machine, and run `git init` -> `git push` manually.
