@@ -10,3 +10,4 @@ coverage/
 www/
 .capacitor/
 .vite/
+.idea/
